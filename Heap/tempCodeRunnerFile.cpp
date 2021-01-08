@@ -1,0 +1,1 @@
+cout << pq1.RemoveMax() << endl;
