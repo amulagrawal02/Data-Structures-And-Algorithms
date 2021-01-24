@@ -9,6 +9,7 @@ void print(int **edge, int n, int sv, bool *visited)
     int j = 0 ;
    while(!q.empty())
     {
+       
         cout << q.front() << " ";
         for (int i = 0; i<n; i++)
         {
@@ -22,9 +23,10 @@ void print(int **edge, int n, int sv, bool *visited)
                 visited[i] = true;
             }
         }
-        visited[j] = true;
+         visited[j] = true;
         q.pop();
-        j++;
+        j = q.front();
+        
     }
 }
 int main()
